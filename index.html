@@ -338,7 +338,7 @@
 <!-- ===================== 顶栏 ===================== -->
 <header class="appbar">
   <div class="appbar-main">
-    <div class="brand">🐺 狼人杀 · 上帝助手</div>
+    <div class="brand">🐺狼人杀·上帝助手</div>
     <button class="icon-btn" id="btnUndo" title="撤销上一步" aria-label="撤销上一步">↶</button>
   </div>
   <div class="status-strip" id="statusBar"></div>
@@ -2042,7 +2042,8 @@ function init() {
   let lastTouch = 0;
   document.addEventListener('touchend', (e) => {
     const now = Date.now();
-    if (now - lastTouch < 300) e.preventDefault();
+    if (now - lastTouch < 300) e.preve
+    ntDefault();
     lastTouch = now;
   }, { passive: false });
 
